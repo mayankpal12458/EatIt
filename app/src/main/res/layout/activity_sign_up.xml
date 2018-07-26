@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.eatit.SignIn"
+    android:background="@drawable/eatitback">
+
+
+    <EditText
+        android:id="@+id/editemailsignup"
+        android:layout_width="wrap_content"
+        android:textColor="#ffffff"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="148dp"
+        android:ems="10"
+        android:inputType="textCapWords"
+        />
+
+    <EditText
+        android:id="@+id/editpasssignup"
+        android:layout_width="wrap_content"
+        android:textColor="#ffffff"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editemailsignup"
+        android:layout_below="@+id/editemailsignup"
+        android:layout_marginTop="43dp"
+        android:ems="10"
+        android:inputType="textPassword"
+         />
+
+    <Button
+        android:id="@+id/btnsignup"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="34dp"
+        android:text="SIGN UP"
+        android:textColor="#ffffff"
+        android:textStyle="italic"
+        android:textSize="35sp"
+        android:background="@drawable/gradient"
+        android:layout_below="@+id/editpasssignup"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textforgotpasssignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnsignup"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="63dp"
+        android:clickable="true"
+        android:text="FORGOT PASSWORD...?"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textloginme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textforgotpasssignup"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:text="ALREADY USER?LOGIN"
+        android:textSize="25sp"/>
+</RelativeLayout>

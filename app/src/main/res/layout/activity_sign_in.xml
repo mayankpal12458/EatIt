@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.eatit.SignIn"
+    android:background="@drawable/eatitback">
+
+    <com.google.android.gms.common.SignInButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/googlebtn"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/checkbox"
+        android:layout_alignParentEnd="true"></com.google.android.gms.common.SignInButton>
+
+
+
+
+    <info.hoang8f.widget.FButton
+        android:layout_width="match_parent"
+        android:id="@+id/fbtnsignin"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:textColor="@color/colorwhite"
+        android:text="LOGIN"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:buttonColor="#32CD32"
+        app:shadowEnabled="true"
+        app:shadowHeight="5dp"
+        app:cornerRadius="4dp"
+        android:shadowColor="@color/colorblack"
+        android:layout_marginBottom="28dp"
+        android:layout_above="@+id/editforgotpass"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/editemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="89dp"
+        android:ems="10"
+        android:text="umeshpal2009@rediffmail.com"
+        android:textColor="#ffffff"
+        android:inputType="textCapWords"
+        android:layout_alignParentTop="true"
+        android:padding="20dp" />
+
+    <EditText
+        android:id="@+id/editpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="123456789"
+        android:ems="10"
+        android:textColor="#ffffff"
+        android:inputType="textPassword"
+        android:layout_below="@+id/editemail"
+        android:layout_alignStart="@+id/editemail"
+        android:layout_marginTop="29dp" />
+
+    <TextView
+        android:id="@+id/editforgotpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="FORGOT PASSWORD?"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:layout_marginBottom="37dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+    <com.rey.material.widget.CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editpass"
+        android:text="Remember me"
+        android:textSize="12sp"
+        style="@style/Material.Drawable.CheckBox"
+        android:id="@+id/checkbox"
+        android:textColor="#ffffff"
+        android:gravity="center_vertical"/>
+
+
+</RelativeLayout>
