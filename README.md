@@ -1,1 +1,1 @@
-This App is an online Food Ordering App developed using Firebase and SQLite as backend
+This App is a Client side online Food Ordering App developed using Firebase and SQLite as backend
